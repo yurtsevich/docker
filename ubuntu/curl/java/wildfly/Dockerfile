@@ -1,7 +1,6 @@
-FROM yurtsevich/ubuntu-16.04_openjdk8-jre
-MAINTAINER Dzmitry Yurtsevich
-RUN apt-get update \
-    && apt-get install -y curl
+FROM yurtsevich/jre
+MAINTAINER Dzmitry Yurtsevich (d.yurtsevich@gmail.com)
+
 ENV WILDFLY_VERSION 10.1.0.Final
 ENV INSTALL_DIR /opt
 
